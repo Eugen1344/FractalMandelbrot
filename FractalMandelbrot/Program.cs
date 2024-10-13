@@ -31,7 +31,7 @@ namespace FractalMandelbrot
         private static void Main(string[] args)
         {
             MainWindow = InitGl(ScreenWidth, ScreenHeight, "Fractal");
-            ShaderProgram = LoadShaders("vertexShader.txt", "fractal.txt");
+            ShaderProgram = LoadShaders("vertexShader.glsl", "fractal.glsl");
             GL.LinkProgram(ShaderProgram);
 
             int vao = GL.GenVertexArray();
